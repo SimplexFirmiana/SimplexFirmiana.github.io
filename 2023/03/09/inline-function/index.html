@@ -9,18 +9,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-redefine.png">
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/"/>
+    <link rel="canonical" href="http://example.com/2023/03/09/inline-function/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Hexo">
+    <meta property="og:title" content="inline-function">
     <meta property="og:description" content="Hexo Theme Redefine">
-    <meta property="og:url" content="http://example.comindex.html">
+    <meta property="og:url" content="http://example.com2023/03/09/inline-function/">
     <meta property="og:image" content="/images/avatar.jpg">
     <meta property="og:site_name" content="梧桐叶与风">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Hexo">
+    <meta name="twitter:title" content="inline-function">
     <meta name="twitter:description" content="Hexo Theme Redefine">
     <meta name="twitter:image" content="/images/avatar.jpg">
     <!--- Icon Part-->
@@ -30,6 +30,8 @@
     <link rel="shortcut icon" href="/images/avatar.jpg">
     
     <title>
+        
+            inline-function -
         
         梧桐叶与风
     </title>
@@ -79,51 +81,19 @@
 <main class="page-container">
 
     
-        <div class="first-screen-container flex-center">
-    <div class="content flex-center">
-        <div class="description fade-in-down-animation" >
-          世界上美好的东西不太多，立秋傍晚从河对岸吹来的风，和二十来岁笑起来要人命的你
-        </div>
-        
-            <div class="social-contacts fade-in-down-animation">
-                
-                    
-                        
-                            <span class="social-contact-item github">
-                                <a target="_blank" href="https://github.com/SimplexFirmiana">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </span>
-                        
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            </div>
-        
-    </div>
-</div>
-
-    
 
     <div class="page-main-content">
 
         <div class="page-main-content-top">
             <header class="menu-wrapper">
     
-    <div class="menu-content has-first-screen">
+    <div class="menu-content">
         <div class="left">
             
             <a class="logo-title" href="/">
-                <h1>
+                
                 梧桐叶与风
-                </h1>
+                
             </a>
         </div>
 
@@ -135,7 +105,7 @@
                         
                             <li class="menu-item">
                                 <!-- Menu -->
-                                <a class="active" 
+                                <a class="" 
                                     href="/"  >
                                     
                                         
@@ -205,7 +175,7 @@
             
                 
                     <li class="drawer-menu-item flex-center">
-                        <a class="active" 
+                        <a class="" 
                         href="/"  >
                              
                                 
@@ -264,327 +234,179 @@
             <div class="main-content">
 
                 
-                    <div class="home-content-container fade-in-down-animation">
-    <ul class="home-article-list">
-        
-            <li class="home-article-item">
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
 
-                
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/03/09/inline-function/">
-                        inline-function
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        预处理器的缺陷
-C++中，预处理器宏存在两个问题，一是宏类似于函数被进行调要，同时也存在问题。例如表达式作为参数时优先级导致的运算错误，当然，可以通过括弧进行解决，但与简单编程相违背。二是预处理器不允许访问类的成员数据，即预处理器不能用作类的成员函数...
-                    
+            
+            
+                <div class="article-title">
+                    <h1 class="article-title-regular">inline-function</h1>
                 </div>
+            
+                
+            
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Thu Mar 09 2023 19:35:46 GMT+0800">
-                
-                    2023-03-09
-                
-            </span>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/avatar.jpg">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">梧桐叶与风</span>
                             
-                            <a href="/tags/C/">C++</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2023/03/09/inline-function/">Read more<span class="seo-reader-text">inline-function</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/03/09/const/">
-                        const
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        C++：const起源
-由于使用#define 没有类型信息，在使用的时候容易引起不知名的错误，所以提出使用const。
-
-使用
-使用const定义需要放入头文件中，通过头文件将const定义单独分配给一个编译单元。
-
-设计思想
-const默认是内部...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Thu Mar 09 2023 17:02:48 GMT+0800">
-                
-                    2023-03-09
-                
-            </span>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
+                                <span class="author-label">lol</span>
                             
-                            <a href="/tags/C/">C++</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2023/03/09/const/">Read more<span class="seo-reader-text">const</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/03/09/overload/">
-                        overload
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        重载函数
-编译器区分函数可以通过同一函数名称，不同参数产生不同的内部名实现。
-
-联合
-struct与class的不同之处在于，struct默认为public，class默认为private。
-
-
-union 可以带有构造函数，析构函数，成员函数甚至访...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Thu Mar 09 2023 16:06:20 GMT+0800">
-                
-                    2023-03-09
-                
-            </span>
+                        </div>
+                        <div class="meta-info">
+                            <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="pc">2023-03-09 19:35:46</span>
+        <span class="mobile">2023-03-09 19:35</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="pc">2023-03-09 20:43:10</span>
+            <span class="mobile">2023-03-09 20:43</span>
+            <span class="hover-info">Updated</span>
         </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/C/">C++</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
+    
 
-    <a href="/2023/03/09/overload/">Read more<span class="seo-reader-text">overload</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
                 
-
+                    <li>
+                        <a href="/tags/C/">C++</a>&nbsp;
+                    </li>
                 
-
-                <h3 class="home-article-title">
-                    <a href="/2023/03/09/Make/">
-                        Make
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Thu Mar 09 2023 15:00:37 GMT+0800">
-                
-                    2023-03-09
-                
-            </span>
+            </ul>
         </span>
-        
-        
-    </div>
+    
 
-    <a href="/2023/03/09/Make/">Read more<span class="seo-reader-text">Make</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/03/09/Pointer/">
-                        C++指针
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        指针
-指针Pointer：C/C++中存放地址的变量类型，可以保存地址，可以使用地址修改变量数值，可以是另一个变量的别名。
-
-
-&amp; 运算符提供元素的地址，即标识符的地址。
-
-
-变量类型  指针  标识符* 
-
-123TYPE X = NUM;...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Thu Mar 09 2023 14:41:26 GMT+0800">
-                
-                    2023-03-09
-                
-            </span>
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
         </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/C/">C++</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2023/03/09/Pointer/">Read more<span class="seo-reader-text">C++指针</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    
 </div>
 
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/03/09/C++/">
-                        C++中的C
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        
-程序中，标识符代表存放变量或被编译过的函数体的存储空间。linkage同连接器所见的方式描述存储空间。
-
-
-static 使变量的生命周期持续到程序结束。
-
-
-extern 关键字告诉编译器存在变量或者函数，但并不一定在当前文件中定义
-
-内部连接 ...
-                    
+                        </div>
+                    </div>
                 </div>
+            
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Thu Mar 09 2023 11:34:41 GMT+0800">
-                
-                    2023-03-09
-                
-            </span>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/C/">C++</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
+            <div class="article-content markdown-body">
+                <h3 id="预处理器的缺陷"><a href="#预处理器的缺陷" class="headerlink" title="预处理器的缺陷"></a>预处理器的缺陷</h3><blockquote>
+<p>C++中，预处理器宏存在两个问题，一是宏类似于函数被进行调要，同时也存在问题。例如表达式作为参数时优先级导致的运算错误，当然，可以通过括弧进行解决，但与简单编程相违背。二是预处理器不允许访问类的成员数据，即预处理器不能用作类的成员函数。例如在宏里没有办法表示类的范围；处理private类成员问题。</p>
+</blockquote>
+<h3 id="内联函数"><a href="#内联函数" class="headerlink" title="内联函数"></a>内联函数</h3><blockquote>
+<p>C++中，宏的概念是作为内联函数实现的，不同的是内联函数在适当的地方像宏一样展开。</p>
+</blockquote>
+<blockquote>
+<p>类中定义的函数自动成为内联函数，也就是访问函数。也可以在普通函数前面加上 inline 关键字变成内联函数。</p>
+</blockquote>
+<blockquote>
+<p>内联定义一般在头文件里，使用的目的也是减少函数调用的开销。</p>
+</blockquote>
 
-    <a href="/2023/03/09/C++/">Read more<span class="seo-reader-text">C++中的C</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
+            </div>
 
-            </li>
-        
+            
+                <div class="post-copyright-info">
+                    <div class="article-copyright-info-container">
+    <ul>
+        <li>Post title：inline-function</li>
+        <li>Post author：梧桐叶与风</li>
+        <li>Create time：2023-03-09 19:35:46</li>
+        <li>
+            Post link：https://redefine.ohevan.com/2023/03/09/inline-function/
+        </li>
+        <li>
+            Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
+        </li>
     </ul>
+</div>
 
-    <div class="home-paginator">
-        <div class="paginator">
+                </div>
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/C/">#C++</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+
+            
+                <div class="article-nav">
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                            rel="next"
+                            href="/2023/03/09/const/"
+                            >
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">const</span>
+                                    <span class="post-nav-item">Next posts</span>
+                                </span>
+                                <span class="right arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+
+            
+                <div class="comment-container">
+                    <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fa-solid fa-comments"></i>&nbsp;Comments
+    </div>
     
 
+        
+            
+
+        
     
 </div>
 
+                </div>
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title">inline-function</div>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8%E7%9A%84%E7%BC%BA%E9%99%B7"><span class="nav-text">预处理器的缺陷</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%85%E8%81%94%E5%87%BD%E6%95%B0"><span class="nav-text">内联函数</span></a></li></ol>
+
+    </div>
+</div>
+            </div>
+        
     </div>
 </div>
 
@@ -663,6 +485,27 @@ extern 关键字告诉编译器存在变量或者函数，但并不一定在当�
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-bottom-side-tools">
@@ -750,7 +593,6 @@ extern 关键字告诉编译器存在变量或者函数，但并不一定在当�
 
 
 
-
 <script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/utils.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/main.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/layouts/menu-shrink.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/tools/go-top-bottom.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/tools/dark-light-toggle.js"></script>
 
 
@@ -774,6 +616,8 @@ extern 关键字告诉编译器存在变量或者函数，但并不一定在当�
 
 
 <div class="post-scripts pjax">
+    
+        <script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/tools/toc-toggle.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/libs/anime.min.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/layouts/toc.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/plugins/tabs.js"></script>
     
     
 </div>

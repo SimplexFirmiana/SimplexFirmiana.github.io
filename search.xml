@@ -128,4 +128,63 @@
         <tag>C++</tag>
       </tags>
   </entry>
+  <entry>
+    <title>const</title>
+    <url>/2023/03/09/const/</url>
+    <content><![CDATA[<h2 id="C-：const"><a href="#C-：const" class="headerlink" title="C++：const"></a>C++：const</h2><h3 id="起源"><a href="#起源" class="headerlink" title="起源"></a>起源</h3><blockquote>
+<p>由于使用#define 没有类型信息，在使用的时候容易引起不知名的错误，所以提出使用const。</p>
+</blockquote>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><blockquote>
+<p>使用const定义需要放入头文件中，通过头文件将const定义单独分配给一个编译单元。</p>
+</blockquote>
+<h3 id="设计思想"><a href="#设计思想" class="headerlink" title="设计思想"></a>设计思想</h3><blockquote>
+<p>const默认是内部连接，只有在当前文件中可见，在连接时不能被其他编译单元看到。</p>
+</blockquote>
+<h3 id="指向const的指针"><a href="#指向const的指针" class="headerlink" title="指向const的指针"></a>指向const的指针</h3><blockquote>
+<p>const TYPE * X ;</p>
+</blockquote>
+<h3 id="const指针"><a href="#const指针" class="headerlink" title="const指针"></a>const指针</h3><blockquote>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>overload</title>
+    <url>/2023/03/09/overload/</url>
+    <content><![CDATA[<h3 id="重载函数"><a href="#重载函数" class="headerlink" title="重载函数"></a>重载函数</h3><blockquote>
+<p>编译器区分函数可以通过同一函数名称，不同参数产生不同的内部名实现。</p>
+</blockquote>
+<h3 id="联合"><a href="#联合" class="headerlink" title="联合"></a>联合</h3><blockquote>
+<p>struct与class的不同之处在于，struct默认为public，class默认为private。</p>
+</blockquote>
+<blockquote>
+<p>union 可以带有构造函数，析构函数，成员函数甚至访问权限。但class存储数据的方式是同一内存区覆盖存放。同时union不能在继承时作为基类使用。</p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>inline-function</title>
+    <url>/2023/03/09/inline-function/</url>
+    <content><![CDATA[<h3 id="预处理器的缺陷"><a href="#预处理器的缺陷" class="headerlink" title="预处理器的缺陷"></a>预处理器的缺陷</h3><blockquote>
+<p>C++中，预处理器宏存在两个问题，一是宏类似于函数被进行调要，同时也存在问题。例如表达式作为参数时优先级导致的运算错误，当然，可以通过括弧进行解决，但与简单编程相违背。二是预处理器不允许访问类的成员数据，即预处理器不能用作类的成员函数。例如在宏里没有办法表示类的范围；处理private类成员问题。</p>
+</blockquote>
+<h3 id="内联函数"><a href="#内联函数" class="headerlink" title="内联函数"></a>内联函数</h3><blockquote>
+<p>C++中，宏的概念是作为内联函数实现的，不同的是内联函数在适当的地方像宏一样展开。</p>
+</blockquote>
+<blockquote>
+<p>类中定义的函数自动成为内联函数，也就是访问函数。也可以在普通函数前面加上 inline 关键字变成内联函数。</p>
+</blockquote>
+<blockquote>
+<p>内联定义一般在头文件里，使用的目的也是减少函数调用的开销。</p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>C++</tag>
+      </tags>
+  </entry>
 </search>
