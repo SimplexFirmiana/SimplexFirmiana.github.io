@@ -83,7 +83,29 @@
   <entry>
     <title>C++指针</title>
     <url>/2023/03/09/Pointer/</url>
-    <content><![CDATA[<h3 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h3><h2 id="函数指针"><a href="#函数指针" class="headerlink" title="函数指针"></a>函数指针</h2><h3 id="函数指针理解"><a href="#函数指针理解" class="headerlink" title="函数指针理解"></a>函数指针理解</h3><blockquote>
+    <content><![CDATA[<h2 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h2><blockquote>
+<p><strong>指针Pointer</strong>：C/C++中存放地址的变量类型，可以保存地址，可以使用地址修改变量数值，可以是另一个变量的别名。</p>
+</blockquote>
+<blockquote>
+<p><strong>&amp;</strong> 运算符提供元素的地址，即<strong>标识符的地址</strong>。</p>
+</blockquote>
+<blockquote>
+<p><em><em>变量类型  指针</em>  标识符</em>* </p>
+</blockquote>
+<div class="highlight-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tr><td class="code"><pre><span class="line">TYPE X = NUM;</span><br><span class="line">TYPE* IP = &amp;X;</span><br><span class="line">X = *IP, IP = &amp;X</span><br></pre></td></tr></table></figure></div>
+
+<blockquote>
+<p>按值传递：相当于COPY变量进行赋值</p>
+</blockquote>
+<blockquote>
+<p>IP中的值就是变量X的地址，*IP（指针IP）指向变量X。</p>
+</blockquote>
+<h3 id="引用传递"><a href="#引用传递" class="headerlink" title="引用传递"></a>引用传递</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">F(&amp;IP)</span><br><span class="line">F(X)</span><br></pre></td></tr></table></figure></div>
+
+<blockquote>
+<p>IP = X , &amp;X = &amp;IP</p>
+</blockquote>
+<h2 id="函数指针"><a href="#函数指针" class="headerlink" title="函数指针"></a>函数指针</h2><h3 id="函数指针理解"><a href="#函数指针理解" class="headerlink" title="函数指针理解"></a>函数指针理解</h3><blockquote>
 <p>遵循的原则是先右后左。函数指针可以从中间开始，向外扩展。中间开始时从变量名开始，向外扩展是先注意右边最近的项，然后注意左边（星号表示的指针），注意右边（参数列表），再注意左边（函数返回值）。</p>
 </blockquote>
 <h3 id="表格驱动码-Table-Driven-Code-：指向函数的指针数组"><a href="#表格驱动码-Table-Driven-Code-：指向函数的指针数组" class="headerlink" title="表格驱动码(Table-Driven Code)：指向函数的指针数组"></a>表格驱动码(Table-Driven Code)：指向函数的指针数组</h3><blockquote>
